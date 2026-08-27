@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<script>
+(function(){
+  try{
+    var t = localStorage.getItem('theme');
+    if (t === 'dark') document.documentElement.setAttribute('data-theme','dark');
+  }catch(e){}
+})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samira Evangelista da Silva — Desenvolvedora Full Stack</title>
+<meta name="description" content="Samira Evangelista da Silva — desenvolvedora full stack e especialista em IA. Projetos, stack técnica e experiência em Python, Django, React e automação de IA.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta property="og:title" content="Samira Evangelista da Silva — Desenvolvedora Full Stack">
+<meta property="og:description" content="Desenvolvedora full stack e especialista em IA. Confira projetos, stack técnica e experiência.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta name="theme-color" content="#7C6EF0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="lottie.min.js"></script>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo">samira<span>.dev</span></div>
+    <div class="nav-links" id="nav-links">
+      <a href="#sobre" data-i18n="nav.sobre">sobre</a>
+      <a href="#trajetoria" data-i18n="nav.trajetoria">trajetória</a>
+      <a href="#projetos" data-i18n="nav.projetos">projetos</a>
+      <a href="#stack" data-i18n="nav.stack">stack</a>
+      <a href="#contato" class="nav-cta" data-i18n="nav.contato">contato</a>
+    </div>
+    <div class="nav-controls">
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button type="button" class="lang-btn" data-lang="pt">PT</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="ja">JP</button>
+        <button type="button" class="lang-btn" data-lang="es">ES</button>
+      </div>
+      <button type="button" class="theme-toggle" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+      </button>
+      <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <span class="blob b1"></span>
+  <span class="blob b2"></span>
+  <span class="blob b3"></span>
+  <span class="blob b4"></span>
+  <span class="blob b5"></span>
+
+  <div class="hero-gif-plate">
+    <div id="hero-lottie" role="img" aria-label="Ilustração animada de desenvolvimento de software"></div>
+  </div>
+
+  <div class="eyebrow" style="justify-content:center;" data-i18n="hero.badge">aberta a novas oportunidades</div>
+  <h1><em>Samira E. da Silva</em></h1>
+  <div class="hero-role">
+    <span class="hero-role-dot"></span>
+    <span data-i18n="hero.role">Desenvolvedora Full Stack &amp; Especialista em IA</span>
+  </div>
+  <p class="hero-sub" data-i18n="hero.sub">Construo aplicações web modernas e aplico Inteligência Artificial para automatizar processos e resolver problemas reais.</p>
+
+  <div class="hero-actions">
+    <a href="#projetos" class="btn btn-primary"><span data-i18n="hero.btnProjects">Ver projetos</span> ↓</a>
+    <a href="#" id="cv-download-btn" class="btn btn-outline" download="Samira-Evangelista-CV.pdf"><span data-i18n="hero.btnCV">Baixar currículo</span> ↓</a>
+    <a href="#contato" class="btn btn-outline" data-i18n="hero.btnContact">Falar comigo</a>
+  </div>
+</section>
+
+<section id="sobre">
+  <div class="wrap about-grid">
+    <div class="about-text">
+      <div class="eyebrow" data-i18n="about.eyebrow">sobre</div>
+      <h2 style="margin:12px 0 20px;" data-i18n="about.title">Quem escreve o código</h2>
+      <p data-i18n="about.p1">Estudante de Ciência da Computação com experiência prática em desenvolvimento Full Stack e implementação de soluções de Inteligência Artificial.</p>
+      <p data-i18n="about.p2">Atualmente, foco na criação de aplicações web modernas e na otimização de processos através de IA no setor industrial, aplicando boas práticas de engenharia de software e foco em resultados.</p>
+    </div>
+    <div class="facts">
+      <div class="profile-card-header">
+        <div class="profile-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 6 4 12l5 6M15 6l5 6-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <div class="profile-name">Samira Evangelista</div>
+          <div class="profile-role" data-i18n="about.role">Full Stack &amp; IA</div>
+        </div>
+      </div>
+      <div class="fact"><span class="fact-label" data-i18n="about.fact.location">localização</span><span class="fact-value" data-i18n="about.fact.locationValue">Brasil - São Paulo</span></div>
+      <div class="fact"><span class="fact-label" data-i18n="about.fact.focus">foco</span><span class="fact-value" data-i18n="about.role">Full Stack &amp; IA</span></div>
+      <div class="fact"><span class="fact-label" data-i18n="about.fact.availability">disponibilidade</span><span class="fact-value" data-i18n="about.fact.availabilityValue">Estágio em TI</span></div>
+      <div class="fact"><span class="fact-label" data-i18n="about.fact.experience">formação</span><span class="fact-value" data-i18n="about.fact.experienceValue">Ciência da Computação</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="trajetoria">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="trajetoria.eyebrow">trajetória</div>
+      <h2 data-i18n="trajetoria.title">Experiência &amp; formação</h2>
+    </div>
+    <div class="trajetoria-grid">
+
+      <div class="trajetoria-card">
+        <span class="project-index mono">exp</span>
+        <h3 data-i18n="trajetoria.exp.role">Estagiária de TI — Especialista em IA</h3>
+        <div class="trajetoria-sub">Fermentec · <span data-i18n="trajetoria.exp.period">03/2026 — atual</span></div>
+        <ul class="trajetoria-list">
+          <li data-i18n="trajetoria.exp.b1">Pesquisa, integração e implementação de ferramentas de IA para automatizar fluxos de trabalho e analisar dados internos.</li>
+          <li data-i18n="trajetoria.exp.b2">Desenvolvimento full stack de aplicações web com Python, Django, Node.js e React, com foco em escalabilidade e segurança.</li>
+          <li data-i18n="trajetoria.exp.b3">Interfaces responsivas e dashboards corporativos com HTML5, JavaScript, Tailwind CSS e DaisyUI.</li>
+          <li data-i18n="trajetoria.exp.b4">Aplicação rigorosa de Clean Code e princípios SOLID para manutenibilidade dos sistemas.</li>
+        </ul>
+      </div>
+
+      <div class="trajetoria-card">
+        <span class="project-index mono">edu</span>
+        <h3 data-i18n="trajetoria.edu.title">Bacharelado em Ciência da Computação</h3>
+        <div class="trajetoria-sub">Universidade Anhembi Morumbi · <span data-i18n="trajetoria.edu.status">em andamento</span></div>
+        <p class="trajetoria-desc" data-i18n="trajetoria.edu.desc">Formação com base em engenharia de software, estruturas de dados e fundamentos de Inteligência Artificial.</p>
+
+        <div class="lang-meter">
+          <div class="lang-row">
+            <span data-i18n="trajetoria.lang.en">Inglês</span>
+            <span class="lang-level" data-i18n="trajetoria.lang.enLevel">Avançado</span>
+          </div>
+          <div class="lang-bar"><div class="lang-fill" style="width:88%;"></div></div>
+        </div>
+        <div class="lang-meter">
+          <div class="lang-row">
+            <span data-i18n="trajetoria.lang.jp">Japonês</span>
+            <span class="lang-level" data-i18n="trajetoria.lang.jpLevel">Básico</span>
+          </div>
+          <div class="lang-bar"><div class="lang-fill" style="width:28%;"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="projetos">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="projects.eyebrow">trabalho</div>
+      <h2 data-i18n="projects.title">Projetos selecionados</h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <span class="project-index mono">01</span>
+        <h3 data-i18n="projects.name">Nome do Projeto</h3>
+        <p data-i18n="projects.desc">Breve descrição do problema que o projeto resolve e o seu papel no desenvolvimento.</p>
+        <div class="project-tags">
+          <span class="tag">React</span>
+          <span class="tag">Node</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="code" data-i18n="projects.code">Código ↗</a>
+          <a href="#" class="live" data-i18n="projects.live">Ver site ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <span class="project-index mono">02</span>
+        <h3 data-i18n="projects.name">Nome do Projeto</h3>
+        <p data-i18n="projects.desc">Breve descrição do problema que o projeto resolve e o seu papel no desenvolvimento.</p>
+        <div class="project-tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">PostgreSQL</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="code" data-i18n="projects.code">Código ↗</a>
+          <a href="#" class="live" data-i18n="projects.live">Ver site ↗</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <span class="project-index mono">03</span>
+        <h3 data-i18n="projects.name">Nome do Projeto</h3>
+        <p data-i18n="projects.desc">Breve descrição do problema que o projeto resolve e o seu papel no desenvolvimento.</p>
+        <div class="project-tags">
+          <span class="tag">Vue</span>
+          <span class="tag">Firebase</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="code" data-i18n="projects.code">Código ↗</a>
+          <a href="#" class="live" data-i18n="projects.live">Ver site ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" data-i18n="stack.eyebrow">ferramentas</div>
+      <h2 data-i18n="stack.title">Minha stack</h2>
+    </div>
+
+    <div class="stack-tabs" role="tablist">
+      <button type="button" class="stack-tab active" data-filter="all" data-i18n="stack.filter.all">Tudo</button>
+      <button type="button" class="stack-tab" data-filter="frontend" data-i18n="stack.frontend">Frontend</button>
+      <button type="button" class="stack-tab" data-filter="backend" data-i18n="stack.backend">Backend &amp; IA</button>
+      <button type="button" class="stack-tab" data-filter="practices" data-i18n="stack.tools">Boas práticas</button>
+    </div>
+
+    <div class="tech-grid">
+
+      <div class="tech-card" data-cat="frontend">
+        <div class="tech-icon" style="--tc1:#61DAFB; --tc2:#3B82F6;">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.2" fill="currentColor"/><ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="currentColor" stroke-width="1.4"/><ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="currentColor" stroke-width="1.4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="currentColor" stroke-width="1.4" transform="rotate(120 12 12)"/></svg>
+        </div>
+        <span class="tech-name">React</span>
+      </div>
+
+      <div class="tech-card" data-cat="frontend">
+        <div class="tech-icon" style="--tc1:#F7DF1E; --tc2:#F5A623;">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M9 15.5c0 1 .6 1.5 1.5 1.5S12 16.3 12 15.3V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M14.5 9v4.7c0 .9.4 1.4 1.2 1.4s1.6-.5 1.6-1.7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <span class="tech-name">JavaScript</span>
+      </div>
+
+      <div class="tech-card" data-cat="frontend">
+        <div class="tech-icon" style="--tc1:#E44D26; --tc2:#F16529;">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M5 4h14l-1.3 15L12 21l-5.7-2L5 4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 8h8l-.3 3.3H9.6l.2 2.2h6l-.5 4.7-3.3 1-3.3-1-.2-2.1" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="tech-name">HTML5</span>
+      </div>
+
+      <div class="tech-card" data-cat="frontend">
+        <div class="tech-icon" style="--tc1:#38BDF8; --tc2:#0EA5E9;">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 7c-2.5 0-4 1.25-4.5 3.75.9-1.25 2-1.72 3.3-1.4.72.18 1.23.7 1.8 1.28.93.94 2 2.02 4.4 2.02 2.5 0 4-1.25 4.5-3.75-.9 1.25-2 1.72-3.3 1.4-.72-.18-1.23-.7-1.8-1.28C15.47 8.08 14.4 7 12 7Zm-4.5 6c-2.5 0-4 1.25-4.5 3.75.9-1.25 2-1.72 3.3-1.4.72.18 1.23.7 1.8 1.28.93.94 2 2.02 4.4 2.02 2.5 0 4-1.25 4.5-3.75-.9 1.25-2 1.72-3.3 1.4-.72-.18-1.23-.7-1.8-1.28-.93-.94-2-2.02-4.4-2.02Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="tech-name">Tailwind CSS</span>
+      </div>
+
+      <div class="tech-card" data-cat="frontend">
+        <div class="tech-icon" style="--tc1:#FF6B9D; --tc2:#F5A623;">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.3" stroke="currentColor" stroke-width="1.4"/><path d="M12 3v4.2M12 16.8V21M21 12h-4.2M7.2 12H3M18.4 5.6l-2.9 2.9M8.5 15.5l-2.9 2.9M18.4 18.4l-2.9-2.9M8.5 8.5 5.6 5.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <span class="tech-name">DaisyUI</span>
+      </div>
+
+      <div class="tech-card" data-cat="backend">
+        <div class="tech-icon" style="--tc1:#3776AB; --tc2:#FFD43B;">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3c-1.5 0-2.7.2-3.5.5C7 4 6.5 4.8 6.5 6v2h5.5v.8H5c-1.3 0-2.4.9-2.7 2.4-.35 1.6-.35 2.7 0 4.3.28 1.3 1 2.4 2.3 2.4H6v-2.6c0-1.5 1.3-2.9 2.8-2.9h4.4c1.3 0 2.3-1.1 2.3-2.4V6c0-1.2-.5-2-1.5-2.5C13 3.2 13.5 3 12 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M12 21c1.5 0 2.7-.2 3.5-.5 1.5-.5 2-1.3 2-2.5v-2h-5.5v-.8H19c1.3 0 2.4-.9 2.7-2.4.35-1.6.35-2.7 0-4.3-.28-1.3-1-2.4-2.3-2.4H18v2.6c0 1.5-1.3 2.9-2.8 2.9h-4.4C9.5 11.6 8.5 12.7 8.5 14v3c0 1.2.5 2 1.5 2.5.5.3.5.5 2 .5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="tech-name">Python</span>
+      </div>
+
+      <div class="tech-card" data-cat="backend">
+        <div class="tech-icon" style="--tc1:#0C4B33; --tc2:#44B78B;">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M9 8v8M9 8h3.2a2.4 2.4 0 0 1 0 4.8H9M15 8v8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="tech-name">Django</span>
+      </div>
+
+      <div class="tech-card" data-cat="backend">
+        <div class="tech-icon" style="--tc1:#539E43; --tc2:#8ED08A;">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 20 7.5v9L12 21 4 16.5v-9L12 3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M12 3v18M4 7.5l8 4.5 8-4.5M4 16.5l8-4.5 8 4.5" stroke="currentColor" stroke-width="1" opacity=".55" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="tech-name">Node.js</span>
+      </div>
+
+      <div class="tech-card" data-cat="backend">
+        <div class="tech-icon" style="--tc1:#9C8FFF; --tc2:#7C6EF0;">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="7" r="2" stroke="currentColor" stroke-width="1.4"/><circle cx="6" cy="17" r="2" stroke="currentColor" stroke-width="1.4"/><circle cx="18" cy="17" r="2" stroke="currentColor" stroke-width="1.4"/><path d="M12 9v3m0 0-4.5 3.5M12 12l4.5 3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <span class="tech-name" data-i18n="stack.chip.aiAutomation">Automação de IA</span>
+      </div>
+
+      <div class="tech-card" data-cat="backend">
+        <div class="tech-icon" style="--tc1:#F5A623; --tc2:#FFC93C;">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9m5 10V5m5 14v-7m5 7v-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <span class="tech-name" data-i18n="stack.chip.dataAnalysis">Análise de Dados</span>
+      </div>
+
+      <div class="tech-card" data-cat="practices">
+        <div class="tech-icon" style="--tc1:#4B3F91; --tc2:#7C6EF0;">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 10-4-2.5-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <span class="tech-name">Clean Code</span>
+      </div>
+
+      <div class="tech-card" data-cat="practices">
+        <div class="tech-icon" style="--tc1:#F5A623; --tc2:#F58A23;">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="13" y="4" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="4" y="13" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/><rect x="13" y="13" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4"/></svg>
+        </div>
+        <span class="tech-name">SOLID</span>
+      </div>
+
+      <div class="tech-card" data-cat="practices">
+        <div class="tech-icon" style="--tc1:#7C6EF0; --tc2:#9C8FFF;">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 18V9l4-2 4 2 4-2 4 2v9" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M4 18h16M8 18v-5m4 5v-7m4 7v-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+        </div>
+        <span class="tech-name" data-i18n="stack.chip.scalability">Escalabilidade</span>
+      </div>
+
+      <div class="tech-card" data-cat="practices">
+        <div class="tech-icon" style="--tc1:#E8735C; --tc2:#F5A623;">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.5-3 7.5-7 10-4-2.5-7-5.5-7-10V6l7-3Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><rect x="9.3" y="11" width="5.4" height="4.3" rx="1" stroke="currentColor" stroke-width="1.3"/><path d="M10.3 11V9.6a1.7 1.7 0 0 1 3.4 0V11" stroke="currentColor" stroke-width="1.3"/></svg>
+        </div>
+        <span class="tech-name" data-i18n="stack.chip.security">Segurança</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="contato-fade"></div>
+  <div class="contact">
+    <div class="eyebrow" style="justify-content:center; color:var(--yellow);" data-i18n="contact.eyebrow">vamos conversar</div>
+    <h2 data-i18n="contact.title">Tem um projeto em mente?</h2>
+    <p data-i18n="contact.p">Estou aberta a oportunidades de estágio, freelance e colaborações em desenvolvimento full stack e IA. Me chame e vamos construir algo juntas.</p>
+    <div class="hero-actions contact-actions">
+      <a href="#" class="btn btn-outline">GitHub ↗</a>
+      <a href="#" class="btn btn-outline">LinkedIn ↗</a>
+      <a href="mailto:samiraevangelista02@hotmail.com" class="btn btn-outline contact-btn">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none"><path d="M3 6.5v11a1.5 1.5 0 0 0 1.5 1.5h15a1.5 1.5 0 0 0 1.5-1.5v-11" stroke="currentColor" stroke-width="1.6"/><path d="M3 6.5 12 13l9-6.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 6h16a1 1 0 0 1 1 1v.3L12 14 3 7.3V7a1 1 0 0 1 1-1Z" fill="currentColor" opacity=".12"/></svg>
+        Hotmail
+      </a>
+      <a href="mailto:samiraevangelista02@gmail.com" class="btn btn-outline contact-btn">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none"><path d="M3 6.5v11a1.5 1.5 0 0 0 1.5 1.5h15a1.5 1.5 0 0 0 1.5-1.5v-11" stroke="currentColor" stroke-width="1.6"/><path d="M3 6.5 12 13l9-6.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 6h16a1 1 0 0 1 1 1v.3L12 14 3 7.3V7a1 1 0 0 1 1-1Z" fill="currentColor" opacity=".12"/></svg>
+        Gmail
+      </a>
+      <a href="https://wa.me/5519999714870" target="_blank" rel="noopener" class="btn btn-primary contact-btn">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2.05 22l5.25-1.38a9.87 9.87 0 0 0 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm5.8 14.16c-.24.68-1.4 1.33-1.93 1.4-.5.07-1.06.31-3.55-.74-3-1.25-4.91-4.3-5.06-4.5-.15-.2-1.21-1.61-1.21-3.07s.76-2.18 1.03-2.48c.26-.29.57-.36.76-.36l.55.01c.17 0 .41-.06.64.49.24.58.81 2 .88 2.14.07.15.12.32.02.51-.1.2-.15.32-.3.49-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.06 1.14 1.01 2.1 1.33 2.4 1.48.3.15.47.13.65-.08.17-.2.73-.85.93-1.15.2-.29.4-.24.66-.14.27.1 1.7.8 1.99.95.29.15.48.22.55.34.07.13.07.72-.17 1.4Z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <footer data-i18n="footer.text">
+      © 2026 Samira Evangelista da Silva — feito com código e café
+    </footer>
+  </div>
+</section>
+
+<script>
+  (function(){
+    fetch('hero-dev.json')
+      .then(function(res){ return res.json(); })
+      .then(function(data){
+        lottie.loadAnimation({
+          container: document.getElementById('hero-lottie'),
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          animationData: data
+        });
+      })
+      .catch(function(err){ console.error('Não foi possível carregar a animação:', err); });
+  })();
+</script>
+<script>
+// ---------- TRADUÇÕES ----------
+// Edite os textos abaixo em pt / en / es para personalizar o conteúdo.
+// A chave (ex: "hero.sub") corresponde ao atributo data-i18n no HTML.
+var translations = {
+  pt: {
+    "nav.sobre": "sobre",
+    "nav.trajetoria": "trajetória",
+    "nav.stack": "stack",
+    "nav.projetos": "projetos",
+    "nav.contato": "contato",
+    "hero.badge": "aberta a novas oportunidades",
+    "hero.role": "Desenvolvedora Full Stack & Especialista em IA",
+    "hero.sub": "Construo aplicações web modernas e aplico Inteligência Artificial para automatizar processos e resolver problemas reais.",
+    "hero.btnProjects": "Ver projetos",
+    "hero.btnCV": "Baixar currículo",
+    "hero.btnContact": "Falar comigo",
+    "about.eyebrow": "sobre",
+    "about.title": "Quem escreve o código",
+    "about.role": "Full Stack & IA",
+    "about.p1": "Estudante de Ciência da Computação com experiência prática em desenvolvimento Full Stack e implementação de soluções de Inteligência Artificial.",
+    "about.p2": "Atualmente, foco na criação de aplicações web modernas e na otimização de processos através de IA no setor industrial, aplicando boas práticas de engenharia de software e foco em resultados.",
+    "about.fact.location": "localização",
+    "about.fact.locationValue": "Brasil - São Paulo",
+    "about.fact.focus": "foco",
+    "about.fact.availability": "disponibilidade",
+    "about.fact.availabilityValue": "Estágio em TI",
+    "about.fact.experience": "formação",
+    "about.fact.experienceValue": "Ciência da Computação",
+    "trajetoria.eyebrow": "trajetória",
+    "trajetoria.title": "Experiência & formação",
+    "trajetoria.exp.role": "Estagiária de TI — Especialista em IA",
+    "trajetoria.exp.period": "03/2026 — atual",
+    "trajetoria.exp.b1": "Pesquisa, integração e implementação de ferramentas de IA para automatizar fluxos de trabalho e analisar dados internos.",
+    "trajetoria.exp.b2": "Desenvolvimento full stack de aplicações web com Python, Django, Node.js e React, com foco em escalabilidade e segurança.",
+    "trajetoria.exp.b3": "Interfaces responsivas e dashboards corporativos com HTML5, JavaScript, Tailwind CSS e DaisyUI.",
+    "trajetoria.exp.b4": "Aplicação rigorosa de Clean Code e princípios SOLID para manutenibilidade dos sistemas.",
+    "trajetoria.edu.title": "Bacharelado em Ciência da Computação",
+    "trajetoria.edu.status": "em andamento",
+    "trajetoria.edu.desc": "Formação com base em engenharia de software, estruturas de dados e fundamentos de Inteligência Artificial.",
+    "trajetoria.lang.en": "Inglês",
+    "trajetoria.lang.enLevel": "Avançado",
+    "trajetoria.lang.jp": "Japonês",
+    "trajetoria.lang.jpLevel": "Básico",
+    "stack.eyebrow": "ferramentas",
+    "stack.filter.all": "Tudo",
+    "stack.title": "Minha stack",
+    "stack.frontend": "Frontend",
+    "stack.backend": "Backend & IA",
+    "stack.tools": "Boas práticas",
+    "stack.chip.aiAutomation": "Automação de IA",
+    "stack.chip.dataAnalysis": "Análise de Dados",
+    "stack.chip.scalability": "Escalabilidade",
+    "stack.chip.security": "Segurança",
+    "projects.eyebrow": "trabalho",
+    "projects.title": "Projetos selecionados",
+    "projects.name": "Nome do Projeto",
+    "projects.desc": "Breve descrição do problema que o projeto resolve e o seu papel no desenvolvimento.",
+    "projects.code": "Código ↗",
+    "projects.live": "Ver site ↗",
+    "contact.eyebrow": "vamos conversar",
+    "contact.title": "Tem um projeto em mente?",
+    "contact.p": "Estou aberta a oportunidades de estágio, freelance e colaborações em desenvolvimento full stack e IA. Me chame e vamos construir algo juntas.",
+    "contact.btnEmail": "Enviar e-mail",
+    "footer.text": "© 2026 Samira Evangelista da Silva — feito com código e café",
+    "meta.title": "Samira Evangelista da Silva — Desenvolvedora Full Stack"
+  },
+  en: {
+    "nav.sobre": "about",
+    "nav.trajetoria": "experience",
+    "nav.stack": "stack",
+    "nav.projetos": "projects",
+    "nav.contato": "contact",
+    "hero.badge": "open to new opportunities",
+    "hero.role": "Full Stack Developer & AI Specialist",
+    "hero.sub": "I build modern web applications and apply Artificial Intelligence to automate processes and solve real problems.",
+    "hero.btnProjects": "View projects",
+    "hero.btnCV": "Download resume",
+    "hero.btnContact": "Get in touch",
+    "about.eyebrow": "about",
+    "about.title": "Who writes the code",
+    "about.role": "Full Stack & AI",
+    "about.p1": "Computer Science student with practical experience in Full Stack development and the implementation of Artificial Intelligence solutions.",
+    "about.p2": "Currently focused on building modern web applications and optimizing industrial processes through AI, applying software engineering best practices with a strong focus on results.",
+    "about.fact.location": "location",
+    "about.fact.locationValue": "Brazil - São Paulo",
+    "about.fact.focus": "focus",
+    "about.fact.availability": "availability",
+    "about.fact.availabilityValue": "IT internship",
+    "about.fact.experience": "education",
+    "about.fact.experienceValue": "Computer Science",
+    "trajetoria.eyebrow": "experience",
+    "trajetoria.title": "Experience & education",
+    "trajetoria.exp.role": "IT Intern — AI Specialist",
+    "trajetoria.exp.period": "03/2026 — present",
+    "trajetoria.exp.b1": "Researching, integrating and implementing AI tools to automate workflows and analyze internal data.",
+    "trajetoria.exp.b2": "Full stack development of web applications with Python, Django, Node.js and React, focused on scalability and security.",
+    "trajetoria.exp.b3": "Responsive interfaces and corporate dashboards with HTML5, JavaScript, Tailwind CSS and DaisyUI.",
+    "trajetoria.exp.b4": "Rigorous application of Clean Code and SOLID principles for system maintainability.",
+    "trajetoria.edu.title": "Bachelor of Computer Science",
+    "trajetoria.edu.status": "ongoing",
+    "trajetoria.edu.desc": "Background in software engineering, data structures and Artificial Intelligence fundamentals.",
+    "trajetoria.lang.en": "English",
+    "trajetoria.lang.enLevel": "Advanced",
+    "trajetoria.lang.jp": "Japanese",
+    "trajetoria.lang.jpLevel": "Elementary",
+    "stack.eyebrow": "tools",
+    "stack.filter.all": "All",
+    "stack.title": "My stack",
+    "stack.frontend": "Frontend",
+    "stack.backend": "Backend & AI",
+    "stack.tools": "Best practices",
+    "stack.chip.aiAutomation": "AI Automation",
+    "stack.chip.dataAnalysis": "Data Analysis",
+    "stack.chip.scalability": "Scalability",
+    "stack.chip.security": "Security",
+    "projects.eyebrow": "work",
+    "projects.title": "Selected projects",
+    "projects.name": "Project Name",
+    "projects.desc": "Brief description of the problem the project solves and your role in building it.",
+    "projects.code": "Code ↗",
+    "projects.live": "Live site ↗",
+    "contact.eyebrow": "let's talk",
+    "contact.title": "Got a project in mind?",
+    "contact.p": "I'm open to internship, freelance and collaboration opportunities in full stack development and AI. Reach out and let's build something together.",
+    "contact.btnEmail": "Send an email",
+    "footer.text": "© 2026 Samira Evangelista da Silva — made with code and coffee",
+    "meta.title": "Samira Evangelista da Silva — Full Stack Developer"
+  },
+  es: {
+    "nav.sobre": "sobre mí",
+    "nav.trajetoria": "trayectoria",
+    "nav.stack": "stack",
+    "nav.projetos": "proyectos",
+    "nav.contato": "contacto",
+    "hero.badge": "abierta a nuevas oportunidades",
+    "hero.role": "Desarrolladora Full Stack y Especialista en IA",
+    "hero.sub": "Construyo aplicaciones web modernas y aplico Inteligencia Artificial para automatizar procesos y resolver problemas reales.",
+    "hero.btnProjects": "Ver proyectos",
+    "hero.btnCV": "Descargar currículum",
+    "hero.btnContact": "Hablemos",
+    "about.eyebrow": "sobre mí",
+    "about.title": "Quién escribe el código",
+    "about.role": "Full Stack e IA",
+    "about.p1": "Estudiante de Ciencias de la Computación con experiencia práctica en desarrollo Full Stack e implementación de soluciones de Inteligencia Artificial.",
+    "about.p2": "Actualmente me enfoco en crear aplicaciones web modernas y optimizar procesos industriales mediante IA, aplicando buenas prácticas de ingeniería de software y orientación a resultados.",
+    "about.fact.location": "ubicación",
+    "about.fact.locationValue": "Brasil - São Paulo",
+    "about.fact.focus": "enfoque",
+    "about.fact.availability": "disponibilidad",
+    "about.fact.availabilityValue": "Pasantía en TI",
+    "about.fact.experience": "formación",
+    "about.fact.experienceValue": "Ciencias de la Computación",
+    "trajetoria.eyebrow": "trayectoria",
+    "trajetoria.title": "Experiencia y formación",
+    "trajetoria.exp.role": "Pasante de TI — Especialista en IA",
+    "trajetoria.exp.period": "03/2026 — actual",
+    "trajetoria.exp.b1": "Investigación, integración e implementación de herramientas de IA para automatizar flujos de trabajo y analizar datos internos.",
+    "trajetoria.exp.b2": "Desarrollo full stack de aplicaciones web con Python, Django, Node.js y React, enfocado en escalabilidad y seguridad.",
+    "trajetoria.exp.b3": "Interfaces responsivas y dashboards corporativos con HTML5, JavaScript, Tailwind CSS y DaisyUI.",
+    "trajetoria.exp.b4": "Aplicación rigurosa de Clean Code y principios SOLID para la mantenibilidad de los sistemas.",
+    "trajetoria.edu.title": "Licenciatura en Ciencias de la Computación",
+    "trajetoria.edu.status": "en curso",
+    "trajetoria.edu.desc": "Formación en ingeniería de software, estructuras de datos y fundamentos de Inteligencia Artificial.",
+    "trajetoria.lang.en": "Inglés",
+    "trajetoria.lang.enLevel": "Avanzado",
+    "trajetoria.lang.jp": "Japonés",
+    "trajetoria.lang.jpLevel": "Básico",
+    "stack.eyebrow": "herramientas",
+    "stack.filter.all": "Todo",
+    "stack.title": "Mi stack",
+    "stack.frontend": "Frontend",
+    "stack.backend": "Backend e IA",
+    "stack.tools": "Buenas prácticas",
+    "stack.chip.aiAutomation": "Automatización de IA",
+    "stack.chip.dataAnalysis": "Análisis de Datos",
+    "stack.chip.scalability": "Escalabilidad",
+    "stack.chip.security": "Seguridad",
+    "projects.eyebrow": "trabajo",
+    "projects.title": "Proyectos seleccionados",
+    "projects.name": "Nombre del Proyecto",
+    "projects.desc": "Breve descripción del problema que resuelve el proyecto y tu papel en su desarrollo.",
+    "projects.code": "Código ↗",
+    "projects.live": "Ver sitio ↗",
+    "contact.eyebrow": "hablemos",
+    "contact.title": "¿Tienes un proyecto en mente?",
+    "contact.p": "Estoy abierta a oportunidades de pasantía, freelance y colaboraciones en desarrollo full stack e IA. Escríbeme y construyamos algo juntas.",
+    "contact.btnEmail": "Enviar correo",
+    "footer.text": "© 2026 Samira Evangelista da Silva — hecho con código y café",
+    "meta.title": "Samira Evangelista da Silva — Desarrolladora Full Stack"
+  },
+  ja: {
+    "nav.sobre": "自己紹介",
+    "nav.trajetoria": "経歴",
+    "nav.stack": "スキル",
+    "nav.projetos": "プロジェクト",
+    "nav.contato": "お問い合わせ",
+    "hero.badge": "新しい機会を歓迎します",
+    "hero.role": "フルスタック開発者 & AIスペシャリスト",
+    "hero.sub": "モダンなWebアプリケーションを構築し、AI（人工知能）を活用して業務プロセスを自動化し、実際の課題を解決します。",
+    "hero.btnProjects": "プロジェクトを見る",
+    "hero.btnCV": "履歴書をダウンロード",
+    "hero.btnContact": "お問い合わせ",
+    "about.eyebrow": "自己紹介",
+    "about.title": "コードを書く人",
+    "about.role": "フルスタック & AI",
+    "about.p1": "コンピュータサイエンスを専攻する学生で、フルスタック開発と人工知能ソリューションの実装において実務経験があります。",
+    "about.p2": "現在は、モダンなWebアプリケーションの構築と、AIを活用した工業分野のプロセス最適化に注力しており、結果を重視したソフトウェアエンジニアリングのベストプラクティスを実践しています。",
+    "about.fact.location": "所在地",
+    "about.fact.locationValue": "ブラジル・サンパウロ",
+    "about.fact.focus": "専門分野",
+    "about.fact.availability": "稼働状況",
+    "about.fact.availabilityValue": "ITインターン中",
+    "about.fact.experience": "学歴",
+    "about.fact.experienceValue": "コンピュータサイエンス",
+    "trajetoria.eyebrow": "経歴",
+    "trajetoria.title": "職務経歴 & 学歴",
+    "trajetoria.exp.role": "ITインターン ― AIスペシャリスト",
+    "trajetoria.exp.period": "2026年3月 ― 現在",
+    "trajetoria.exp.b1": "業務の自動化と社内データ分析のためのAIツールの調査・統合・実装を担当。",
+    "trajetoria.exp.b2": "Python、Django、Node.js、Reactを用いたWebアプリケーションのフルスタック開発。スケーラビリティとセキュリティを重視。",
+    "trajetoria.exp.b3": "HTML5、JavaScript、Tailwind CSS、DaisyUIを用いたレスポンシブなインターフェースと社内ダッシュボードの開発。",
+    "trajetoria.exp.b4": "システムの保守性を確保するため、クリーンコードとSOLID原則を厳格に適用。",
+    "trajetoria.edu.title": "コンピュータサイエンス学士",
+    "trajetoria.edu.status": "在学中",
+    "trajetoria.edu.desc": "ソフトウェア工学、データ構造、人工知能の基礎を学んでいます。",
+    "trajetoria.lang.en": "英語",
+    "trajetoria.lang.enLevel": "上級",
+    "trajetoria.lang.jp": "日本語",
+    "trajetoria.lang.jpLevel": "初級",
+    "stack.eyebrow": "ツール",
+    "stack.filter.all": "すべて",
+    "stack.title": "私のスキルセット",
+    "stack.frontend": "フロントエンド",
+    "stack.backend": "バックエンド & AI",
+    "stack.tools": "ベストプラクティス",
+    "stack.chip.aiAutomation": "AI自動化",
+    "stack.chip.dataAnalysis": "データ分析",
+    "stack.chip.scalability": "スケーラビリティ",
+    "stack.chip.security": "セキュリティ",
+    "projects.eyebrow": "実績",
+    "projects.title": "厳選プロジェクト",
+    "projects.name": "プロジェクト名",
+    "projects.desc": "プロジェクトが解決する課題と、開発における自分の役割の簡単な説明。",
+    "projects.code": "コード ↗",
+    "projects.live": "サイトを見る ↗",
+    "contact.eyebrow": "お話しましょう",
+    "contact.title": "プロジェクトのご相談はありますか？",
+    "contact.p": "インターンシップ、フリーランス、フルスタック開発やAI分野でのコラボレーションの機会を歓迎しています。お気軽にご連絡ください。",
+    "contact.btnEmail": "メールを送る",
+    "footer.text": "© 2026 Samira Evangelista da Silva — コードとコーヒーで作りました",
+    "meta.title": "Samira Evangelista da Silva ― フルスタック開発者"
+  }
+};
+
+var langMeta = { pt: "pt-BR", en: "en", es: "es", ja: "ja" };
+
+// Currículos em PDF (base64) — PT é usado também para ES por padrão.
+var resumeFiles = {
+  pt: { href: "cv-pt.pdf", filename: "Samira-Evangelista-Curriculo-PT.pdf" },
+  en: { href: "cv-en.pdf", filename: "Samira-Evangelista-Resume-EN.pdf" },
+  es: { href: "cv-en.pdf", filename: "Samira-Evangelista-Resume-EN.pdf" }
+};
+resumeFiles.ja = resumeFiles.en;
+
+function applyLang(lang) {
+  var dict = translations[lang] || translations.pt;
+  document.querySelectorAll('[data-i18n]').forEach(function (el) {
+    var key = el.getAttribute('data-i18n');
+    if (dict[key] !== undefined) {
+      el.textContent = dict[key];
+    }
+  });
+  if (dict['meta.title']) document.title = dict['meta.title'];
+  document.documentElement.setAttribute('lang', langMeta[lang] || 'pt-BR');
+  document.querySelectorAll('.lang-btn').forEach(function (btn) {
+    btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+  });
+  var cvBtn = document.getElementById('cv-download-btn');
+  if (cvBtn) {
+    var resume = resumeFiles[lang] || resumeFiles.pt;
+    cvBtn.setAttribute('href', resume.href);
+    cvBtn.setAttribute('download', resume.filename);
+  }
+  try { localStorage.setItem('lang', lang); } catch (e) {}
+}
+
+function applyTheme(theme) {
+  if (theme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  } else {
+    document.documentElement.removeAttribute('data-theme');
+  }
+  try { localStorage.setItem('theme', theme); } catch (e) {}
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var savedLang = 'pt';
+  try { savedLang = localStorage.getItem('lang') || 'pt'; } catch (e) {}
+  applyLang(savedLang);
+
+  document.querySelectorAll('.lang-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyLang(btn.getAttribute('data-lang'));
+    });
+  });
+
+  var toggle = document.querySelector('.theme-toggle');
+  if (toggle) {
+    toggle.addEventListener('click', function () {
+      var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      applyTheme(isDark ? 'light' : 'dark');
+    });
+  }
+
+  // ---------- MENU MOBILE ----------
+  var menuToggle = document.querySelector('.menu-toggle');
+  var navLinks = document.getElementById('nav-links');
+  if (menuToggle && navLinks) {
+    var closeMenu = function () {
+      navLinks.classList.remove('open');
+      menuToggle.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    };
+    var toggleMenu = function () {
+      var isOpen = navLinks.classList.toggle('open');
+      menuToggle.classList.toggle('open', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    };
+    menuToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      toggleMenu();
+    });
+    navLinks.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', closeMenu);
+    });
+    document.addEventListener('click', function (e) {
+      if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+        closeMenu();
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') closeMenu();
+    });
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 720) closeMenu();
+    });
+  }
+
+  // ---------- STACK: FILTRO POR CATEGORIA ----------
+  var stackTabs = document.querySelectorAll('.stack-tab');
+  var techCards = document.querySelectorAll('.tech-card');
+  stackTabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      stackTabs.forEach(function (t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      var filter = tab.getAttribute('data-filter');
+      techCards.forEach(function (card) {
+        var match = filter === 'all' || card.getAttribute('data-cat') === filter;
+        card.classList.toggle('hidden-filter', !match);
+      });
+    });
+  });
+
+  // ---------- ANIMAÇÃO AO ROLAR (cards da stack) ----------
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry, i) {
+        if (entry.isIntersecting) {
+          setTimeout(function () {
+            entry.target.classList.add('in-view');
+          }, i * 45);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+    techCards.forEach(function (card) { revealObserver.observe(card); });
+  } else {
+    techCards.forEach(function (card) { card.classList.add('in-view'); });
+  }
+});
+</script>
+</body>
+</html>
