@@ -5,8 +5,10 @@
 (function(){
   try{
     var t = localStorage.getItem('theme');
-    if (t === 'dark') document.documentElement.setAttribute('data-theme','dark');
-  }catch(e){}
+    if (t !== 'light') document.documentElement.setAttribute('data-theme','dark');
+  }catch(e){
+    document.documentElement.setAttribute('data-theme','dark');
+  }
 })();
 </script>
 <meta charset="UTF-8">
@@ -331,8 +333,8 @@
     <h2 data-i18n="contact.title">Tem um projeto em mente?</h2>
     <p data-i18n="contact.p">Estou aberta a oportunidades de estágio, freelance e colaborações em desenvolvimento full stack e IA. Me chame e vamos construir algo juntas.</p>
     <div class="hero-actions contact-actions">
-      <a href="#" class="btn btn-outline">GitHub ↗</a>
-      <a href="#" class="btn btn-outline">LinkedIn ↗</a>
+<a href="https://github.com/samira-silva" target="_blank" rel="noopener" class="btn btn-outline">GitHub ↗</a>
+<a href="https://www.linkedin.com/in/samira-evangelista/" target="_blank" rel="noopener" class="btn btn-outline">LinkedIn ↗</a>
       <a href="mailto:samiraevangelista02@hotmail.com" class="btn btn-outline contact-btn">
         <svg viewBox="0 0 24 24" width="17" height="17" fill="none"><path d="M3 6.5v11a1.5 1.5 0 0 0 1.5 1.5h15a1.5 1.5 0 0 0 1.5-1.5v-11" stroke="currentColor" stroke-width="1.6"/><path d="M3 6.5 12 13l9-6.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M4 6h16a1 1 0 0 1 1 1v.3L12 14 3 7.3V7a1 1 0 0 1 1-1Z" fill="currentColor" opacity=".12"/></svg>
         Hotmail
@@ -347,7 +349,7 @@
       </a>
     </div>
     <footer data-i18n="footer.text">
-      © 2026 Samira Evangelista da Silva — feito com código e café
+      © 2026 Samira Evangelista da Silva — feito com ♡
     </footer>
   </div>
 </section>
