@@ -162,51 +162,69 @@
     </div>
     <div class="projects-grid">
 
-      <div class="project-card">
-        <span class="project-index mono">01</span>
-        <h3 data-i18n="projects.p1.name">Esse Site Portifólio</h3>
-        <p data-i18n="projects.p1.desc">Breve descrição do problema que o projeto resolve e o seu papel no desenvolvimento.</p>
+      <article class="project-card project-card--featured" aria-labelledby="p2-name">
+        <div class="project-main">
+          <span class="project-badge" data-i18n="projects.p2.badge">Destaque</span>
+          <h3 id="p2-name" data-i18n="projects.p2.name">Doc.IA</h3>
+          <p data-i18n="projects.p2.desc">Assistente de documentos com pipeline de RAG construído do zero. Roda inteiramente de graça, com embeddings locais e Groq no tier gratuito.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">RAG</span>
+            <span class="tag">LLM</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Groq</span>
+          </div>
+          <div class="project-links">
+            <a id="p2-code" href="https://github.com/samira-silva/Doc.IA" target="_blank" rel="noopener noreferrer" class="code" aria-labelledby="p2-code p2-name" data-i18n="projects.p2.code">Código</a>
+            <!-- Quando o Doc.IA estiver publicado, adicione o link abaixo com a URL real:
+            <a id="p2-live" href="URL_AQUI" target="_blank" rel="noopener noreferrer" class="live" aria-labelledby="p2-live p2-name" data-i18n="projects.p2.live">Ver site</a>
+            -->
+          </div>
+        </div>
+        <div class="project-detail">
+          <h4 data-i18n="projects.p2.flowTitle">Como funciona</h4>
+          <ol class="pipeline" role="list">
+            <li data-i18n="projects.p2.step1">Divide o documento em trechos (chunking)</li>
+            <li data-i18n="projects.p2.step2">Gera embeddings localmente</li>
+            <li data-i18n="projects.p2.step3">Busca os trechos mais parecidos com a pergunta</li>
+            <li data-i18n="projects.p2.step4">Responde citando a fonte</li>
+          </ol>
+          <p class="project-extra" data-i18n="projects.p2.extra">Também faz resumo automático, conversão de arquivos e OCR.</p>
+        </div>
+      </article>
+
+      <article class="project-card" aria-labelledby="p1-name">
+        <h3 id="p1-name" data-i18n="projects.p1.name">Esse Site Portfólio</h3>
+        <p data-i18n="projects.p1.desc">Meu portfólio pessoal, feito do zero com HTML, CSS e JavaScript puros, sem frameworks. Foco em performance, acessibilidade, quatro idiomas e modo claro e escuro.</p>
         <div class="project-tags">
-          <span class="tag">React</span>
-          <span class="tag">Node</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Lottie</span>
         </div>
         <div class="project-links">
-          <a href="#" class="code" data-i18n="projects.p1.code">Código ↗</a>
-          <a href="#" class="live" data-i18n="projects.p1.live">Ver site ↗</a>
+          <a id="p1-code" href="https://github.com/samira-silva/samira-dev" target="_blank" rel="noopener noreferrer" class="code" aria-labelledby="p1-code p1-name" data-i18n="projects.p1.code">Código</a>
         </div>
-      </div>
+      </article>
 
-      <div class="project-card">
-        <span class="project-index mono">02</span>
-        <h3 data-i18n="projects.p2.name">Doc.IA</h3>
-        <p data-i18n="projects.p2.desc">Assistente inteligente de documentos com um pipeline de RAG (Retrieval- Augmented Generation) construído do zero — chunking, embeddings, busca por similaridade e geração de resposta com citação de fonte — além de resumo automático, conversão de arquivos e OCR. Roda inteiramente de graça (embeddings locais + Groq no tier gratuito).</p>
-        <div class="project-tags">
-          <span class="tag">Python e Django</span>
-          <span class="tag">RAG</span>
-          <span class="tag">LLM</span>
-          <span class="tag">SQLite</span>
-        </div>
+      <a class="project-card project-card--more" href="https://github.com/samira-silva" target="_blank" rel="noopener noreferrer">
+        <h3 data-i18n="projects.more.title">Mais projetos no GitHub</h3>
+        <p data-i18n="projects.more.desc">Veja todos os repositórios no meu perfil.</p>
+        <span class="more-link">github.com/samira-silva</span>
+      </a>
+
+      <!-- Modelo para o próximo projeto (adicione as chaves projects.p3.* nas traduções):
+      <article class="project-card" aria-labelledby="p3-name">
+        <h3 id="p3-name" data-i18n="projects.p3.name">Nome do Projeto</h3>
+        <p data-i18n="projects.p3.desc">Descrição curta.</p>
+        <div class="project-tags"><span class="tag">Tech</span></div>
         <div class="project-links">
-          <a href="https://github.com/samira-silva/Doc.IA.git" target="_blank" rel="noopener" class="code" data-i18n="projects.p2.code">Código ↗</a>
-          <a href="#" class="live" data-i18n="projects.p2.live">Ver site ↗</a>
+          <a id="p3-code" href="URL" target="_blank" rel="noopener noreferrer" class="code" aria-labelledby="p3-code p3-name" data-i18n="projects.p3.code">Código</a>
         </div>
-      </div>
+      </article>
+      -->
 
-      <div class="project-card">
-        <span class="project-index mono">03</span>
-        <h3 data-i18n="projects.p3.name">Nome do Projeto</h3>
-        <p data-i18n="projects.p3.desc">Breve descrição do problema que o projeto resolve e o seu papel no desenvolvimento.</p>
-        <div class="project-tags">
-          <span class="tag">Vue</span>
-          <span class="tag">Firebase</span>
-        </div>
-        <div class="project-links">
-          <a href="#" class="code" data-i18n="projects.p3.code">Código ↗</a>
-          <a href="#" class="live" data-i18n="projects.p3.live">Ver site ↗</a>
-        </div>
-      </div>
-
-    </div>
   </div>
 </section>
 
@@ -430,17 +448,26 @@ var translations = {
     "projects.eyebrow": "trabalho",
     "projects.title": "Projetos selecionados",
     "projects.p1.name": "Esse Site Portfólio",
-    "projects.p1.desc": "Meu site de portfólio pessoal, construído do zero com foco em performance, acessibilidade e suporte a múltiplos idiomas e temas.",
-    "projects.p1.code": "Código ↗",
-    "projects.p1.live": "Ver site ↗",
+    "projects.p1.desc": "Meu portfólio pessoal, feito do zero com HTML, CSS e JavaScript puros, sem frameworks. Foco em performance, acessibilidade, quatro idiomas e modo claro e escuro.",
+    "projects.p1.code": "Código",
+    "projects.p1.live": "Ver site",
     "projects.p2.name": "Doc.IA",
-    "projects.p2.desc": "Assistente inteligente de documentos com um pipeline de RAG (Retrieval-Augmented Generation) construído do zero — chunking, embeddings, busca por similaridade e geração de resposta com citação de fonte — além de resumo automático, conversão de arquivos e OCR. Roda inteiramente de graça (embeddings locais + Groq no tier gratuito).",
-    "projects.p2.code": "Código ↗",
-    "projects.p2.live": "Ver site ↗",
+    "projects.p2.desc": "Assistente de documentos com pipeline de RAG construído do zero. Roda inteiramente de graça, com embeddings locais e Groq no tier gratuito.",
+    "projects.p2.code": "Código",
+    "projects.p2.live": "Ver site",
     "projects.p3.name": "Nome do Projeto",
     "projects.p3.desc": "Breve descrição do problema que o projeto resolve e o seu papel no desenvolvimento.",
-    "projects.p3.code": "Código ↗",
-    "projects.p3.live": "Ver site ↗",
+    "projects.p3.code": "Código",
+    "projects.p3.live": "Ver site",
+    "projects.p2.badge": "Destaque",
+    "projects.p2.flowTitle": "Como funciona",
+    "projects.p2.step1": "Divide o documento em trechos (chunking)",
+    "projects.p2.step2": "Gera embeddings localmente",
+    "projects.p2.step3": "Busca os trechos mais parecidos com a pergunta",
+    "projects.p2.step4": "Responde citando a fonte",
+    "projects.p2.extra": "Também faz resumo automático, conversão de arquivos e OCR.",
+    "projects.more.title": "Mais projetos no GitHub",
+    "projects.more.desc": "Veja todos os repositórios no meu perfil.",
     "contact.eyebrow": "vamos conversar",
     "contact.title": "Tem um projeto em mente?",
     "contact.p": "Estou aberta a oportunidades de estágio, freelance e colaborações em desenvolvimento full stack e IA. Me chame e vamos construir algo juntas.",
@@ -501,17 +528,26 @@ var translations = {
     "projects.eyebrow": "work",
     "projects.title": "Selected projects",
     "projects.p1.name": "This Portfolio Site",
-    "projects.p1.desc": "My personal portfolio site, built from scratch with a focus on performance, accessibility, and support for multiple languages and themes.",
-    "projects.p1.code": "Code ↗",
-    "projects.p1.live": "Live site ↗",
+    "projects.p1.desc": "My personal portfolio, built from scratch with plain HTML, CSS and JavaScript, no frameworks. Focused on performance, accessibility, four languages and light and dark modes.",
+    "projects.p1.code": "Code",
+    "projects.p1.live": "Live site",
     "projects.p2.name": "Doc.IA",
-    "projects.p2.desc": "An intelligent document assistant with a RAG (Retrieval-Augmented Generation) pipeline built from scratch — chunking, embeddings, similarity search and source-cited answer generation — plus automatic summarization, file conversion and OCR. Runs entirely for free (local embeddings + Groq free tier).",
-    "projects.p2.code": "Code ↗",
-    "projects.p2.live": "Live site ↗",
+    "projects.p2.desc": "A document assistant with a RAG pipeline built from scratch. Runs entirely for free, with local embeddings and the Groq free tier.",
+    "projects.p2.code": "Code",
+    "projects.p2.live": "Live site",
     "projects.p3.name": "Project Name",
     "projects.p3.desc": "Brief description of the problem the project solves and your role in building it.",
-    "projects.p3.code": "Code ↗",
-    "projects.p3.live": "Live site ↗",
+    "projects.p3.code": "Code",
+    "projects.p3.live": "Live site",
+    "projects.p2.badge": "Featured",
+    "projects.p2.flowTitle": "How it works",
+    "projects.p2.step1": "Splits the document into chunks",
+    "projects.p2.step2": "Generates embeddings locally",
+    "projects.p2.step3": "Finds the chunks closest to the question",
+    "projects.p2.step4": "Answers with a source citation",
+    "projects.p2.extra": "It also does automatic summarization, file conversion and OCR.",
+    "projects.more.title": "More projects on GitHub",
+    "projects.more.desc": "Browse all repositories on my profile.",
     "contact.eyebrow": "let's talk",
     "contact.title": "Got a project in mind?",
     "contact.p": "I'm open to internship, freelance and collaboration opportunities in full stack development and AI. Reach out and let's build something together.",
@@ -572,17 +608,26 @@ var translations = {
     "projects.eyebrow": "trabajo",
     "projects.title": "Proyectos seleccionados",
     "projects.p1.name": "Este Sitio Portafolio",
-    "projects.p1.desc": "Mi sitio de portafolio personal, construido desde cero con enfoque en rendimiento, accesibilidad y soporte para múltiples idiomas y temas.",
-    "projects.p1.code": "Código ↗",
-    "projects.p1.live": "Ver sitio ↗",
+    "projects.p1.desc": "Mi portafolio personal, hecho desde cero con HTML, CSS y JavaScript puros, sin frameworks. Enfocado en rendimiento, accesibilidad, cuatro idiomas y modo claro y oscuro.",
+    "projects.p1.code": "Código",
+    "projects.p1.live": "Ver sitio",
     "projects.p2.name": "Doc.IA",
-    "projects.p2.desc": "Asistente inteligente de documentos con un pipeline de RAG (Retrieval-Augmented Generation) construido desde cero — chunking, embeddings, búsqueda por similitud y generación de respuestas con cita de fuente — además de resumen automático, conversión de archivos y OCR. Funciona totalmente gratis (embeddings locales + Groq en el nivel gratuito).",
-    "projects.p2.code": "Código ↗",
-    "projects.p2.live": "Ver sitio ↗",
+    "projects.p2.desc": "Asistente de documentos con un pipeline de RAG construido desde cero. Funciona totalmente gratis, con embeddings locales y Groq en el nivel gratuito.",
+    "projects.p2.code": "Código",
+    "projects.p2.live": "Ver sitio",
     "projects.p3.name": "Nombre del Proyecto",
     "projects.p3.desc": "Breve descripción del problema que resuelve el proyecto y tu papel en su desarrollo.",
-    "projects.p3.code": "Código ↗",
-    "projects.p3.live": "Ver sitio ↗",
+    "projects.p3.code": "Código",
+    "projects.p3.live": "Ver sitio",
+    "projects.p2.badge": "Destacado",
+    "projects.p2.flowTitle": "Cómo funciona",
+    "projects.p2.step1": "Divide el documento en fragmentos (chunking)",
+    "projects.p2.step2": "Genera embeddings localmente",
+    "projects.p2.step3": "Busca los fragmentos más parecidos a la pregunta",
+    "projects.p2.step4": "Responde citando la fuente",
+    "projects.p2.extra": "También hace resumen automático, conversión de archivos y OCR.",
+    "projects.more.title": "Más proyectos en GitHub",
+    "projects.more.desc": "Mira todos los repositorios en mi perfil.",
     "contact.eyebrow": "hablemos",
     "contact.title": "¿Tienes un proyecto en mente?",
     "contact.p": "Estoy abierta a oportunidades de pasantía, freelance y colaboraciones en desarrollo full stack e IA. Escríbeme y construyamos algo juntas.",
@@ -643,17 +688,26 @@ var translations = {
     "projects.eyebrow": "実績",
     "projects.title": "厳選プロジェクト",
     "projects.p1.name": "このポートフォリオサイト",
-    "projects.p1.desc": "パフォーマンス、アクセシビリティ、多言語・複数テーマ対応に重点を置いてゼロから構築した、個人のポートフォリオサイトです。",
-    "projects.p1.code": "コード ↗",
-    "projects.p1.live": "サイトを見る ↗",
+    "projects.p1.desc": "フレームワークを使わず、HTML・CSS・JavaScriptだけでゼロから作った個人ポートフォリオ。パフォーマンス、アクセシビリティ、4言語対応、ライト／ダークモードを重視しています。",
+    "projects.p1.code": "コード",
+    "projects.p1.live": "サイトを見る",
     "projects.p2.name": "Doc.IA",
-    "projects.p2.desc": "ゼロから構築したRAG（Retrieval-Augmented Generation）パイプラインを備えたインテリジェント文書アシスタント。チャンキング、埋め込み、類似度検索、出典付き回答生成に加え、自動要約、ファイル変換、OCRを実装。完全無料で動作します（ローカル埋め込み + Groq無料枠）。",
-    "projects.p2.code": "コード ↗",
-    "projects.p2.live": "サイトを見る ↗",
+    "projects.p2.desc": "ゼロから構築したRAGパイプラインを備えた文書アシスタント。ローカル埋め込みとGroqの無料枠で、完全無料で動作します。",
+    "projects.p2.code": "コード",
+    "projects.p2.live": "サイトを見る",
     "projects.p3.name": "プロジェクト名",
     "projects.p3.desc": "プロジェクトが解決する課題と、開発における自分の役割の簡単な説明。",
-    "projects.p3.code": "コード ↗",
-    "projects.p3.live": "サイトを見る ↗",
+    "projects.p3.code": "コード",
+    "projects.p3.live": "サイトを見る",
+    "projects.p2.badge": "注目",
+    "projects.p2.flowTitle": "仕組み",
+    "projects.p2.step1": "文書をチャンクに分割",
+    "projects.p2.step2": "埋め込みをローカルで生成",
+    "projects.p2.step3": "質問に最も近いチャンクを検索",
+    "projects.p2.step4": "出典を示して回答",
+    "projects.p2.extra": "自動要約、ファイル変換、OCRにも対応。",
+    "projects.more.title": "GitHubでほかのプロジェクトを見る",
+    "projects.more.desc": "プロフィールですべてのリポジトリをご覧いただけます。",
     "contact.eyebrow": "お話しましょう",
     "contact.title": "プロジェクトのご相談はありますか？",
     "contact.p": "インターンシップ、フリーランス、フルスタック開発やAI分野でのコラボレーションの機会を歓迎しています。お気軽にご連絡ください。",
